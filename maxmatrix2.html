@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+    var arr = [[1, 6, 87, 4,], [3, 6, 9, 55]];
+    var max = arr[0][0];
+    function ismax(max,arr){
+      return  max<arr;
+    }
+    for (i = 0; i < arr.length; i++) {
+        for (j = 0; j < arr[i].length; j++) {
+            if (ismax(max,arr[i][j])) {
+                max = arr[i][j];
+            }
+        }
+    }
+    document.getElementById("demo").innerHTML = max;
+</script>
+</body>
+</html>
